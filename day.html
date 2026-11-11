@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="摄影日历。" />
+  <meta name="theme-color" content="#f3efe6" />
+  <title>日历</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='3' fill='%232a2724'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <a class="skip" href="#frames">跳到照片</a>
+  <header class="mast">
+    <a href="index.html">日历</a>
+  </header>
+  <main></main>
+  <dialog class="lb" id="lightbox" aria-label="照片">
+    <button type="button" class="lb-close">关闭</button>
+    <div class="lb-inner">
+      <img alt="" />
+      <div class="lb-nav">
+        <button type="button" class="lb-prev">上一张</button>
+        <figcaption></figcaption>
+        <button type="button" class="lb-next">下一张</button>
+      </div>
+    </div>
+  </dialog>
+  <script src="js/journal.js"></script>
+  <script src="js/day.js"></script>
+  <script src="js/lightbox.js"></script>
+</body>
+</html>
