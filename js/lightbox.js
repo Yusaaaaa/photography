@@ -4,7 +4,7 @@
 
   var img = dialog.querySelector("img");
   var cap = dialog.querySelector("figcaption");
-  var buttons = Array.prototype.slice.call(document.querySelectorAll(".shot-btn"));
+  var buttons = Array.prototype.slice.call(document.querySelectorAll(".shot-btn, .loose-btn"));
   var index = 0;
 
   function pad(n) { return (n < 10 ? "0" : "") + n; }

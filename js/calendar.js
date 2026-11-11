@@ -105,8 +105,10 @@
   var loose = window.LOOSE || [];
   if (loose.length) {
     document.getElementById("loose").hidden = false;
-    document.getElementById("loose-list").innerHTML = loose.map(function (item) {
-      return '<li><a href="' + esc(item.href) + '">' + esc(item.label) + "</a></li>";
+    document.getElementById("loose-list").innerHTML = loose.map(function (item, i) {
+      return '<li><button type="button" class="loose-btn" aria-label="放大第 ' + (i + 1) + ' 张">' +
+        '<img src="' + esc(item.src) + '" width="' + item.w + '" height="' + item.h + '" alt="' + esc(item.alt) + '">' +
+        "</button></li>";
     }).join("");
   }
 

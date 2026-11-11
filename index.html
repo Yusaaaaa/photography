@@ -27,7 +27,7 @@
     <div id="cal"></div>
     <section class="loose" id="loose" hidden>
       <h2>日期或地点未知</h2>
-      <ul id="loose-list"></ul>
+      <ul class="loose-row" id="loose-list"></ul>
     </section>
     <p class="sr" id="live" aria-live="polite"></p>
     <noscript>
@@ -35,13 +35,27 @@
         <li><a href="day.html?d=2026-10-03">2026年10月3日 · 内蒙古</a></li>
         <li><a href="day.html?d=2026-10-05">2026年10月5日 · 内蒙古</a></li>
         <li><a href="day.html?d=2026-11-11">2026年11月11日 · 深圳湾公园</a></li>
-        <li><a href="images/日期未知or地点未知/IMG_4349.jpg">IMG_4349</a></li>
-        <li><a href="images/日期未知or地点未知/IMG_5210.jpg">IMG_5210</a></li>
+      </ul>
+      <ul class="loose-row">
+        <li><a href="images/日期未知or地点未知/IMG_4349.jpg"><img src="images/日期未知or地点未知/IMG_4349.jpg" width="1600" height="1200" alt="蓝天和云，两台高高的起重机"></a></li>
+        <li><a href="images/日期未知or地点未知/IMG_5210.jpg"><img src="images/日期未知or地点未知/IMG_5210.jpg" width="1600" height="1200" alt="草坡上的一排人"></a></li>
       </ul>
     </noscript>
   </main>
 
+  <dialog class="lb" id="lightbox" aria-label="照片">
+    <button type="button" class="lb-close">关闭</button>
+    <div class="lb-inner">
+      <img alt="" />
+      <div class="lb-nav">
+        <button type="button" class="lb-prev">上一张</button>
+        <figcaption></figcaption>
+        <button type="button" class="lb-next">下一张</button>
+      </div>
+    </div>
+  </dialog>
   <script src="js/journal.js"></script>
   <script src="js/calendar.js"></script>
+  <script src="js/lightbox.js"></script>
 </body>
 </html>

@@ -50,6 +50,6 @@ window.JOURNAL = [
 ];
 
 window.LOOSE = [
-  { href: "images/日期未知or地点未知/IMG_4349.jpg", label: "IMG_4349" },
-  { href: "images/日期未知or地点未知/IMG_5210.jpg", label: "IMG_5210" }
+  { src: "images/日期未知or地点未知/IMG_4349.jpg", w: 1600, h: 1200, alt: "蓝天和云，两台高高的起重机" },
+  { src: "images/日期未知or地点未知/IMG_5210.jpg", w: 1600, h: 1200, alt: "草坡上的一排人" }
 ];
